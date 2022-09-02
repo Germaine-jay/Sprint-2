@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\trial 3\leap_years\bin\Debug\net6.0\leap_years.exe
+C:\Users\pc\Desktop\trial 3\leap_years\bin\Debug\net6.0\leap_years.deps.json
+C:\Users\pc\Desktop\trial 3\leap_years\bin\Debug\net6.0\leap_years.runtimeconfig.json
+C:\Users\pc\Desktop\trial 3\leap_years\bin\Debug\net6.0\leap_years.dll
+C:\Users\pc\Desktop\trial 3\leap_years\bin\Debug\net6.0\leap_years.pdb
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.AssemblyInfo.cs
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.dll
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\refint\leap_years.dll
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.pdb
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\leap_years.genruntimeconfig.cache
+C:\Users\pc\Desktop\trial 3\leap_years\obj\Debug\net6.0\ref\leap_years.dll
