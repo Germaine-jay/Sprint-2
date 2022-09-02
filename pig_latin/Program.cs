@@ -1,16 +1,12 @@
 ﻿// A PROGRAMME THAT CONVERTS A SENTENCE IN ENGLISH TO PIG LATIN
 
 string wordInEnglish = "The quick brown fox jumps over the lazy dog";
-char[] charwordInEnglish = wordInEnglish.ToCharArray();
-Array.Reverse(charwordInEnglish);
 
-string newWordInPigLatin = new String(charwordInEnglish);
-string [] new_Words = newWordInPigLatin.Split();
-string pig_latin = "";
-
-foreach(string word in new_Words)
-    { 
-        pig_latin += word + "ay" + " ";
+string pig_latin="";
+foreach(string  word in wordInEnglish.Split())
+    {
+        var NewWord = word.Substring(1) + word.Substring(0,1);
+        pig_latin += NewWord + "ay" +" ";
     }
 Console.WriteLine(pig_latin.TrimEnd());
 
@@ -18,16 +14,15 @@ Console.WriteLine(pig_latin.TrimEnd());
 
 // A PROGRAMME THAT CONVERTS A SENTENCE IN PIG LATIN TO ENGLISH
 
-string PigLatin = "goday yzalay ehtay revoay spmujay xofay nworbay kciuqay ehTay";
-string [] wordInPigLatin = PigLatin.Split();
+string PigLatin = "heTay uickqay rownbay oxfay umpsjay veroay hetay azylay ogday";
+
 string newWord = "";
-foreach(string word in wordInPigLatin)
+foreach(string word in PigLatin.Split())
     {
         string word2 = word.Replace("ay","");
-        newWord += word2 + " ";
+        var len = word2.Length;
+        var NewWord2 = word2.Substring(len-1,1)+ word2.Substring(0,len-1);
+        newWord += NewWord2 + " ";
     }
 
-char[] WordInEnglish = newWord.ToCharArray();
-Array.Reverse(WordInEnglish);
-string newWordInEnglish = new String(WordInEnglish);
-Console.WriteLine(newWordInEnglish.TrimStart());
+Console.WriteLine(newWord.TrimStart());
