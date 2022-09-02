@@ -1,43 +1,17 @@
-﻿Random secretNumber = new Random();
-int number = secretNumber.Next(1,10);
-int initialNum = 0;
-int num_guess = 0;
-var listOfGusses = new List<int>();
-listOfGusses.Add(0);
+﻿var n = new List<int>();
+for(int i=0;i<=84;i++)
+{
+    int year = 2022+i;
+    int days = DateTime.DaysInMonth(year,2);
 
-while((number != initialNum) && (num_guess <=3))
+    if(days == 29)
     {
-        Console.Write("Enter your guess: ");
-        var guess = int.Parse(Console.ReadLine());
-
-    if(listOfGusses.Last() == guess)
-    {
-        Console.WriteLine("You entered the same wrong number");
-        num_guess += 0;
-    }
-
-    if(listOfGusses.Last() != guess){
-        num_guess += 1;
-        if(guess > number && num_guess <3){
-            listOfGusses.Add(guess);
-            Console.WriteLine($"Lower, you have {4-num_guess} attempts left");
-        }
-        if(guess < number && num_guess <3){
-            listOfGusses.Add(guess);
-            Console.WriteLine($"Higher, you have {4-num_guess} attempts left");
-        }
-            if(guess > number && num_guess == 3){
-                listOfGusses.Add(guess);
-                Console.WriteLine("Lower, your last attempt");
-        }
-            if(guess != number && num_guess == 3){
-                listOfGusses.Add(guess);
-                Console.WriteLine("Higher, your last attempt");
-        }
-        if(guess != number && num_guess == 4){
-            Console.WriteLine("Game over, you have no attempts left");
-        }
-        else if(guess == number){Console.WriteLine("you are right");
-        break;}
+        n.Add(year);
     }
 }
+
+foreach(int r in n)
+{
+    Console.WriteLine($"The year {r} is a leap year");
+}
+Console.WriteLine(n.Count);
